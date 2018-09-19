@@ -1,0 +1,2 @@
+# StudentDiary
+Minor Projects
