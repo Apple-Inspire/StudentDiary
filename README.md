@@ -38,7 +38,7 @@ Auth.auth().createUser(withEmail: email, password: pass) { user, error in
 ```
 
 
-
+To homescreen is identifier for screen after login
 ```
  override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
