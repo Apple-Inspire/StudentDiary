@@ -15,7 +15,16 @@ pod install
 ```
 
 ```
-Auth.auth().createUser(withEmail: email, password: pass) { user, error in
+@objc func handleSignUp() {
+        guard let username = usernameField.text else { return }
+        guard let email = emailField.text else { return }
+        guard let pass = passwordField.text else { return }
+        
+        setContinueButton(enabled: false)
+        continueButton.setTitle("", for: .normal)
+        activityView.startAnimating()
+        
+        Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
                 print("User created!")
                 
@@ -35,6 +44,9 @@ Auth.auth().createUser(withEmail: email, password: pass) { user, error in
                 print("Error: \(error!.localizedDescription)")
             }
         }
+        
+        
+    }
 ```
 
 
@@ -45,6 +57,26 @@ To homescreen is identifier for screen after login
         
         if let user = Auth.auth().currentUser {
             self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+        }
+    }
+```
+
+
+```
+ @objc func handleSignIn() {
+        guard let email = emailField.text else { return }
+        guard let pass = passwordField.text else { return }
+        
+        setContinueButton(enabled: false)
+        continueButton.setTitle("", for: .normal)
+        activityView.startAnimating()
+        
+        Auth.auth().signIn(withEmail: email, password: pass) { user, error in
+            if error == nil && user != nil {
+                self.dismiss(animated: false, completion: nil)
+            } else {
+                print("Error logging in: \(error!.localizedDescription)")
+            }
         }
     }
 ```
