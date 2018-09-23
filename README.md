@@ -24,3 +24,5 @@ end
 ```
 pod install
 ```
+
+Author : Yash Nayak
