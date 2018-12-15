@@ -2,7 +2,7 @@
 //  welcome.swift
 //  Studentiinfo
 //
-//  Created by Vishitosh on 21/09/18.
+//  Created by YashN on 21/09/18.
 //  Copyright © 2018 ghrce. All rights reserved.
 //
 
