@@ -2,8 +2,8 @@
 //  BaseViewController.swift
 //  AKSwiftSlideMenu
 //
-//  Created by Ashish on 21/09/15.
-//  Copyright (c) 2015 Kode. All rights reserved.
+//  Created by Yash Nayak on 21/09/18.
+//  Copyright (c) 2018 Kode. All rights reserved.
 //
 
 import UIKit
