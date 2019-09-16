@@ -26,3 +26,4 @@ pod install
 ```
 
 Author : Yash Nayak
+Author: Prakhar Garhewal
